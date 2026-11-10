@@ -146,6 +146,20 @@ The dashboard also links to the FastAPI interactive API documentation at `/docs`
 | `/tracks/status_counts` | GET | View song status counts |
 | `/tracks/failed` | GET | View failed song transfers |
 
+## Planned improvements
+
+Future updates will focus on making transfers more accurate, reliable, and efficient:
+
+- **Optimize YouTube API quota usage:** Reduce unnecessary API requests so larger music libraries can be transferred more efficiently.
+- **Pause and resume transfers:** Preserve progress when a transfer is interrupted or a daily API limit is reached, then continue without starting over.
+- **Improve song matching:** Identify more accurate YouTube matches and reduce incorrect selections, such as covers, remixes, or live performances.
+- **Support individual Spotify playlists:** Let users choose specific playlists to transfer instead of only importing Liked Songs.
+- **Prevent duplicate transfers:** Keep track of songs already added to each YouTube playlist and avoid duplicate entries.
+- **Improve transfer feedback:** Provide clearer progress information and more useful explanations for songs that fail to transfer.
+- **Strengthen reliability and security:** Improve error recovery, authentication protections, and automated test coverage.
+
+These are **planned features**, not functionality available in the current version.
+
 ## Limitations and troubleshooting
 
 - **YouTube API quotas:** Searching for videos and adding them to playlists consumes API quota. Use small batches and review errors if transfers stop. Changing the request delay does **not** reduce quota usage.
